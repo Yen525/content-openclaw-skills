@@ -106,8 +106,22 @@ python scripts/convert.py \
 
 ## 📦 输出
 
-输出目录结构：一篇文章拆分多篇，**每篇小红书一篇文案 + 一张配图**，配图严格贴合该篇内容：
+输出目录结构，支持多种配图方式：
 
+### 模式 1：一篇小红书 → 多张配图 （推荐）
+```
+output/
+├── post_1.md                      # 第一篇小红书文案
+├── post_1_cover_1.png           # 第一篇配图 1
+├── post_1_cover_2.png           # 第一篇配图 2
+├── post_2.md                      # 第二篇小红书文案
+├── post_2_cover_1.png           # 第二篇配图 1
+├── post_2_cover_2.png           # 第二篇配图 2
+...
+└── result.json                  # 结果汇总
+```
+
+### 模式 2：一篇小红书 → 一张封面配图（默认）
 ```
 output/
 ├── post_1.md          # 第一篇小红书文案
@@ -119,6 +133,21 @@ output/
 ...
 └── result.json        # 结果汇总
 ```
+
+### 配置方式
+编辑 `scripts/config.json`：
+```json
+{
+  "image_generation": {
+    "generate_cover_per_post": true,
+    "generate_images_per_section": false,
+    "images_per_post": 3,           // 一篇小红书生成几张配图
+    ...
+  }
+}
+
+- `generate_images_per_section: true` → 给每一个小标题也生成一张配图（更密集）
+- `images_per_post: 3` → 一篇小红书生成 3 张配图，可配置
 
 ## ✨ 示例
 
