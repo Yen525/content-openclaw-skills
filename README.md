@@ -106,14 +106,17 @@ python scripts/convert.py \
 
 ## 📦 输出
 
-输出目录结构：
+输出目录结构：一篇文章拆分多篇，**每篇小红书一篇文案 + 一张配图**，配图严格贴合该篇内容：
 
 ```
 output/
 ├── post_1.md          # 第一篇小红书文案
-├── post_1_cover.png   # 第一篇封面图
-├── post_2.md
-├── post_2_cover.png
+├── post_1_cover.png   # 第一篇封面图（贴合本篇内容生成）
+├── post_2.md          # 第二篇小红书文案
+├── post_2_cover.png   # 第二篇封面图（贴合本篇内容生成）
+├── post_3.md
+├── post_3_cover.png
+...
 └── result.json        # 结果汇总
 ```
 
