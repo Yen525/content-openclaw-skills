@@ -1,0 +1,17 @@
+{
+  "name": "wechat-xiaohongshu-converter",
+  "version": "1.0.0",
+  "description": "OpenClaw Skill - Convert WeChat public account article to Xiaohongshu posts with auto image generation via Gemini",
+  "main": "scripts/convert.py",
+  "keywords": ["openclaw", "openclaw-skill", "wechat", "xiaohongshu", "content-conversion", "ai-image"],
+  "author": "Yen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yen525/content-openclaw-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yen525/content-openclaw-skills/issues"
+  },
+  "homepage": "https://github.com/Yen525/content-openclaw-skills#readme"
+}
