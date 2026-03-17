@@ -1,0 +1,18 @@
+{
+  "xiaohongshu": {
+    "max_words_per_post": 500,
+    "default_hashtags": ["AI", "科技", "干货分享", "互联网"],
+    "include_hashtags": true,
+    "style": "professional"
+  },
+  "image_generation": {
+    "generate_cover_per_post": true,
+    "style": "Xiaohongshu minimalist modern aesthetic",
+    "aspect_ratio": "3:4"
+  },
+  "nano_banana": {
+    "temperature": 1,
+    "top_p": 0.95,
+    "top_k": 64
+  }
+}
